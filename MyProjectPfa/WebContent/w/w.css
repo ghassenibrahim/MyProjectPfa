@@ -1,0 +1,13 @@
+#test{
+    animation: Test 1s infinite;
+	 color: #FF0000;
+ margin: 5px;
+  font-size: 1.25em;	
+  position: relative;
+top: 40px; left: 40px; 
+}
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}

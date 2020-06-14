@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="pfa"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.pfa.model.User</class>
+		<class>com.pfa.model.Compte</class>
+		<class>com.pfa.model.Role</class>
+		<class>com.pfa.model.DemandeurService</class>
+		<class>com.pfa.model.Demande</class>
+		<class>com.pfa.model.FournisseurService</class>
+		<class>com.pfa.model.Service</class>
+		<class>com.pfa.model.Categorie</class>
+		<class>com.pfa.model.Disponibilite</class>
+		<class>com.pfa.model.Promo</class>
+		<class>com.pfa.model.Message</class>
+		<class>com.pfa.model.Contrat</class>
+		<class>com.pfa.model.Intervention</class>
+		<class>com.pfa.model.Commentaire</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/a" />
+
+			<property name="eclipselink.logging.level" value="INFO" />
+
+
+		</properties>
+	</persistence-unit>
+
+</persistence>
